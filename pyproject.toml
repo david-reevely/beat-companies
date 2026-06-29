@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beat-companies"
+version = "1.0.0"
+description = "Master company roster for David Reevely's beat-monitoring tools"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["beat_companies"]
+# companies.toml lives beside the package and is read at runtime via a
+# parent-dir lookup (see __init__.py); editable installs keep it canonical.
