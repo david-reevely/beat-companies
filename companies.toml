@@ -1,0 +1,1860 @@
+[meta]
+beats = [
+    "cybersecurity",
+    "defence",
+    "nuclear",
+    "telecom",
+    "space",
+    "quantum",
+    "transport",
+    "health",
+    "energy",
+    "research",
+]
+company_tools = [
+    "contracts",
+    "news_release",
+    "google_news",
+    "courts",
+]
+
+[meta.news_release_sectors]
+cybersecurity = "Cybersecurity"
+defence = "Defence"
+nuclear = "Nuclear"
+health = "Health"
+telecom = "Telecom"
+quantum = "Quantum"
+space = "Space"
+transport = "Transport"
+energy = "Energy"
+research = "Ottawa / Research"
+
+[meta.news_release_colors]
+Cybersecurity = "#1a4f8a"
+Defence = "#2e6b3e"
+Nuclear = "#7a2e2e"
+Health = "#4a6741"
+Telecom = "#2e4f6b"
+Quantum = "#2e5a4a"
+Space = "#3d2e6b"
+Transport = "#5a4a2e"
+Energy = "#6b5a1a"
+"Ottawa / Research" = "#4a4a4a"
+Other = "#888888"
+
+[[company]]
+id = "kyndryl"
+name = "Kyndryl"
+beats = [
+    "cybersecurity",
+]
+
+[[company]]
+id = "plurilock"
+name = "Plurilock"
+beats = [
+    "cybersecurity",
+]
+
+[company.news_release]
+feed = "https://www.plurilock.com/feed/"
+
+[[company]]
+id = "field-effect"
+name = "Field Effect"
+beats = [
+    "cybersecurity",
+]
+
+[company.google_news]
+search = [
+    "Field Effect software",
+]
+
+[company.courts]
+searches = [
+    { term = "FIELD EFFECT", type = "exact" },
+]
+
+[[company]]
+id = "ibm-canada"
+name = "IBM Canada"
+beats = [
+    "cybersecurity",
+]
+match = [
+    "IBM Canada",
+]
+
+[company.news_release]
+terms = [
+    "IBM Canada",
+    "IBM Watson",
+]
+
+[[company]]
+id = "microsoft-canada"
+name = "Microsoft Canada"
+beats = [
+    "cybersecurity",
+]
+match = [
+    "Microsoft Canada",
+]
+
+[[company]]
+id = "mondata"
+name = "Mondata"
+beats = [
+    "cybersecurity",
+]
+match = [
+    "Mondata",
+]
+
+[company.news_release]
+terms = [
+    "Mondata Inc.",
+]
+
+[company.google_news]
+search = [
+    "Mondata Inc.",
+]
+
+[[company]]
+id = "general-dynamics"
+name = "General Dynamics"
+beats = [
+    "defence",
+]
+canada_gate = true
+
+[company.news_release]
+terms = [
+    "General Dynamics Canada",
+    "General Dynamics Mission Systems Canada",
+]
+
+[[company]]
+id = "bombardier"
+name = "Bombardier"
+beats = [
+    "defence",
+]
+
+[[company]]
+id = "volatus"
+name = "Volatus Aerospace"
+beats = [
+    "defence",
+]
+match = [
+    "Volatus Aerospace",
+    "Volatus",
+]
+
+[company.news_release]
+display = "Volatus"
+terms = [
+    "Volatus Aerospace",
+    "Volatus",
+]
+
+[[company]]
+id = "kraken-robotics"
+name = "Kraken Robotics"
+beats = [
+    "defence",
+]
+match = [
+    "Kraken Robotics",
+]
+
+[company.news_release]
+feed = "https://krakenrobotics.com/feed/"
+
+[[company]]
+id = "seaspan"
+name = "Seaspan"
+beats = [
+    "defence",
+]
+
+[company.news_release]
+terms = [
+    "Seaspan",
+]
+
+[company.google_news]
+search = [
+    "Seaspan Shipyards",
+]
+
+[[company]]
+id = "irving-shipbuilding"
+name = "Irving Shipbuilding"
+beats = [
+    "defence",
+]
+match = [
+    "Irving Shipbuilding",
+]
+
+[[company]]
+id = "davie"
+name = "Davie Shipbuilding"
+beats = [
+    "defence",
+]
+match = [
+    "Davie Shipbuilding",
+    "Chantier Davie",
+]
+
+[company.news_release]
+display = "Davie Shipbuilding"
+terms = [
+    "Davie",
+]
+
+[company.google_news]
+search = [
+    "Davie Shipbuilding",
+    "Chantier Davie",
+]
+
+[company.courts]
+searches = [
+    { term = "DAVIE", type = "contains" },
+]
+
+[[company]]
+id = "dominion-dynamics"
+name = "Dominion Dynamics"
+beats = [
+    "defence",
+]
+match = [
+    "Dominion Dynamics",
+]
+
+[[company]]
+id = "juno"
+name = "Juno"
+beats = [
+    "defence",
+]
+match = [
+    "Juno Defence",
+    "Juno Inc",
+]
+
+[company.news_release]
+terms = [
+    "Juno Defence",
+    "Juno Inc",
+]
+
+[[company]]
+id = "one9"
+name = "One9"
+beats = [
+    "defence",
+]
+match = [
+    "One9",
+    "One Nine",
+]
+
+[company.news_release]
+terms = [
+    "One9",
+    "One Nine",
+]
+
+[[company]]
+id = "lockheed-martin"
+name = "Lockheed Martin"
+beats = [
+    "defence",
+]
+canada_gate = true
+match = [
+    "Lockheed Martin",
+]
+
+[company.news_release]
+display = "Lockheed Martin Canada"
+terms = [
+    "Lockheed Martin Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "LOCKHEED MARTIN", type = "exact" },
+]
+
+[[company]]
+id = "saab"
+name = "Saab"
+beats = [
+    "defence",
+]
+canada_gate = true
+match = [
+    "Saab Canada",
+    "Saab AB",
+    "Saab Defence",
+]
+
+[company.news_release]
+display = "Saab Canada"
+terms = [
+    "Saab Canada",
+    "Saab AB",
+]
+
+[company.google_news]
+search = [
+    "Saab defence",
+    "Saab Gripen",
+]
+
+[company.courts]
+searches = [
+    { term = "SAAB", type = "contains" },
+]
+
+[[company]]
+id = "tkms"
+name = "TKMS"
+beats = [
+    "defence",
+]
+match = [
+    "ThyssenKrupp Marine",
+    "TKMS",
+]
+
+[company.news_release]
+terms = [
+    "ThyssenKrupp Marine",
+    "TKMS",
+    "Team 212CD",
+]
+url = "https://team212cd.ca/"
+
+[[company]]
+id = "hanwha-ocean"
+name = "Hanwha Ocean"
+beats = [
+    "defence",
+]
+canada_gate = true
+match = [
+    "Hanwha",
+]
+
+[company.news_release]
+terms = [
+    "Hanwha Ocean",
+    "Hanwha Defence",
+    "Hanwha Systems",
+]
+url = "https://www.newswire.ca/news/hanwha-ocean/"
+
+[[company]]
+id = "calian"
+name = "Calian"
+beats = [
+    "defence",
+]
+match = [
+    "Calian",
+]
+
+[company.news_release]
+display = "Calian Group"
+terms = [
+    "Calian Group",
+    "Calian",
+]
+url = "https://www.newswire.ca/news/calian-group-ltd/"
+
+[[company]]
+id = "cae"
+name = "CAE / SkyAlyne"
+beats = [
+    "defence",
+]
+match = [
+    "CAE Inc",
+    "SkyAlyne",
+]
+
+[company.news_release]
+display = "CAE"
+terms = [
+    "CAE Inc",
+    "CAE Defense",
+    "SkyAlyne",
+]
+url = "https://www.newswire.ca/news/cae-inc./"
+
+[company.google_news]
+search = [
+    "CAE Inc",
+    "SkyAlyne",
+]
+
+[company.courts]
+searches = [
+    { term = "CAE INC.", type = "exact" },
+    { term = "SKYALYNE", type = "contains" },
+]
+
+[[company]]
+id = "bae-systems"
+name = "BAE Systems"
+beats = [
+    "defence",
+]
+canada_gate = true
+match = [
+    "BAE Systems",
+]
+
+[company.news_release]
+display = "BAE Systems Canada"
+terms = [
+    "BAE Systems Canada",
+]
+
+[company.courts]
+display = "BAE Systems Canada"
+searches = [
+    { term = "BAE", type = "contains" },
+]
+
+[[company]]
+id = "magellan"
+name = "Magellan Aerospace"
+beats = [
+    "defence",
+]
+match = [
+    "Magellan Aerospace",
+]
+
+[company.news_release]
+url = "https://magellan.aero/media/press-releases/"
+
+[[company]]
+id = "5n-plus"
+name = "5N Plus"
+beats = [
+    "defence",
+]
+match = [
+    "5N Plus",
+]
+
+[company.news_release]
+terms = [
+    "5N Plus",
+    "5NPluS",
+]
+url = "https://www.newswire.ca/news/5n-plus-inc/"
+
+[[company]]
+id = "top-aces"
+name = "Top Aces"
+beats = [
+    "defence",
+]
+
+[[company]]
+id = "landing-zones"
+name = "Landing Zones Canada"
+beats = [
+    "defence",
+]
+match = [
+    "Landing Zones Canada",
+]
+
+[[company]]
+id = "canadian-strategic-missions"
+name = "Canadian Strategic Missions"
+beats = [
+    "defence",
+]
+match = [
+    "Canadian Strategic Missions",
+]
+
+[company.news_release]
+terms = [
+    "Canadian Strategic Missions Corporation",
+    "CSMC",
+    "Canadian Space Mining Corporation",
+]
+
+[[company]]
+id = "marshall-land-systems"
+name = "Marshall Land Systems"
+beats = [
+    "defence",
+]
+match = [
+    "Marshall Land Systems",
+]
+
+[company.news_release]
+terms = [
+    "Marshall Land Systems",
+    "Marshall Canada",
+]
+
+[[company]]
+id = "shearwater-aerospace"
+name = "Shearwater Aerospace"
+beats = [
+    "defence",
+]
+match = [
+    "Shearwater Aerospace",
+]
+
+[company.news_release]
+terms = [
+    "Shearwater Aerospace",
+    "Shearwater Aerospatiale",
+]
+
+[[company]]
+id = "atkinsrealis"
+name = "AtkinsRéalis"
+beats = [
+    "nuclear",
+]
+match = [
+    "AtkinsRéalis",
+    "AtkinsRealis",
+]
+
+[company.news_release]
+terms = [
+    "AtkinsRéalis",
+    "AtkinsRealis",
+    "ATRL",
+]
+
+[company.google_news]
+search = [
+    "AtkinsRealis",
+    "SNC-Lavalin",
+]
+
+[company.courts]
+searches = [
+    { term = "ATKINSREALIS", type = "contains" },
+    { term = "SNC-LAVALIN", type = "contains" },
+]
+
+[[company]]
+id = "westinghouse"
+name = "Westinghouse"
+beats = [
+    "nuclear",
+]
+canada_gate = true
+match = [
+    "Westinghouse",
+]
+
+[company.news_release]
+terms = [
+    "Westinghouse Electric Canada",
+    "Westinghouse Canada",
+]
+
+[company.google_news]
+search = [
+    "Westinghouse nuclear",
+]
+
+[[company]]
+id = "ge-hitachi"
+name = "GE Hitachi"
+beats = [
+    "nuclear",
+]
+canada_gate = true
+match = [
+    "GE Hitachi",
+]
+
+[company.news_release]
+terms = [
+    "GE Hitachi Nuclear",
+    "GEH",
+]
+
+[company.google_news]
+search = [
+    "GE Hitachi",
+    "BWRX-300",
+]
+
+[company.courts]
+searches = [
+    { term = "GE HITACHI", type = "contains" },
+    { term = "GE HITACHI NUCLEAR ENERGY CANADA INC.", type = "exact" },
+]
+
+[[company]]
+id = "aecl"
+name = "AECL"
+beats = [
+    "nuclear",
+]
+match = [
+    "Atomic Energy of Canada",
+    "AECL",
+]
+
+[company.news_release]
+terms = [
+    "Atomic Energy of Canada",
+    "AECL",
+]
+
+[company.google_news]
+search = [
+    "Atomic Energy of Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "ATOMIC ENERGY OF CANADA LIMITED", type = "exact" },
+]
+
+[[company]]
+id = "bwxt"
+name = "BWXT"
+beats = [
+    "nuclear",
+]
+match = [
+    "BWXT",
+    "BWX Technologies",
+]
+
+[company.news_release]
+display = "BWXT Canada"
+terms = [
+    "BWX Technologies",
+    "BWXT Canada",
+]
+
+[[company]]
+id = "general-fusion"
+name = "General Fusion"
+beats = [
+    "nuclear",
+]
+
+[company.news_release]
+feed = "https://generalfusion.com/feed/"
+
+[[company]]
+id = "opg"
+name = "Ontario Power Generation"
+beats = [
+    "nuclear",
+    "energy",
+]
+private = false
+match = [
+    "Ontario Power Generation",
+    "OPG",
+]
+
+[company.news_release]
+display = "OPG"
+terms = [
+    "Ontario Power Generation",
+    "OPG",
+]
+
+[company.google_news]
+search = [
+    "Ontario Power Generation",
+    "Darlington nuclear",
+    "Pickering nuclear",
+]
+
+[company.courts]
+searches = [
+    { term = "ONTARIO POWER GENERATION", type = "exact" },
+]
+
+[[company]]
+id = "moltex"
+name = "Moltex Energy"
+beats = [
+    "nuclear",
+]
+match = [
+    "Moltex",
+]
+
+[company.news_release]
+terms = [
+    "Moltex",
+]
+
+[company.google_news]
+search = [
+    "Moltex Energy",
+]
+
+[[company]]
+id = "terrestrial-energy"
+name = "Terrestrial Energy"
+beats = [
+    "nuclear",
+]
+match = [
+    "Terrestrial Energy",
+]
+
+[company.news_release]
+terms = [
+    "Terrestrial Energy",
+    "IMSR",
+]
+
+[company.courts]
+searches = [
+    { term = "TERRESTRIAL ENERGY INC.", type = "exact" },
+    { term = "TERRESTRIAL ENERGY INC", type = "exact" },
+]
+
+[[company]]
+id = "moderna"
+name = "Moderna"
+beats = [
+    "health",
+]
+match = [
+    "Moderna",
+]
+
+[company.news_release]
+display = "Moderna Canada"
+terms = [
+    "Moderna Canada",
+]
+
+[company.google_news]
+search = [
+    "Moderna Canada",
+]
+
+[[company]]
+id = "pfizer"
+name = "Pfizer"
+beats = [
+    "health",
+]
+canada_gate = true
+match = [
+    "Pfizer",
+]
+
+[company.news_release]
+display = "Pfizer Canada"
+terms = [
+    "Pfizer Canada",
+]
+
+[company.google_news]
+search = [
+    "Pfizer Canada",
+]
+
+[[company]]
+id = "abcellera"
+name = "AbCellera"
+beats = [
+    "health",
+]
+
+[[company]]
+id = "gsk"
+name = "GSK"
+beats = [
+    "health",
+]
+canada_gate = true
+match = [
+    "GSK",
+    "GlaxoSmithKline",
+]
+
+[company.news_release]
+display = "GSK Canada"
+terms = [
+    "GSK Canada",
+    "GlaxoSmithKline Canada",
+]
+
+[company.google_news]
+search = [
+    "GlaxoSmithKline Canada",
+    "GSK Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "GLAXOSMITHKLINE INC.", type = "exact" },
+    { term = "GLAXOSMITHKLINE INC", type = "exact" },
+]
+
+[[company]]
+id = "sanofi"
+name = "Sanofi"
+beats = [
+    "health",
+]
+canada_gate = true
+match = [
+    "Sanofi",
+]
+
+[company.news_release]
+display = "Sanofi Canada"
+terms = [
+    "Sanofi Canada",
+]
+
+[company.google_news]
+search = [
+    "Sanofi Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "SANOFI CONSUMER HEALTH INC.", type = "exact" },
+    { term = "SANOFI CONSUMER HEALTH INC", type = "exact" },
+    { term = "SANOFI PASTEUR LIMITED", type = "exact" },
+    { term = "SANOFI-AVENTIS CANADA INC.", type = "exact" },
+    { term = "SANOFI-AVENTIS CANADA INC", type = "exact" },
+]
+
+[[company]]
+id = "zymeworks"
+name = "Zymeworks"
+beats = [
+    "health",
+]
+
+[[company]]
+id = "insilico"
+name = "Insilico Medicine"
+beats = [
+    "health",
+]
+canada_gate = true
+match = [
+    "Insilico",
+]
+
+[company.news_release]
+terms = [
+    "Insilico Medicine",
+    "Insilico",
+]
+
+[company.google_news]
+search = [
+    "Insilico Medicine",
+]
+
+[company.courts]
+searches = [
+    { term = "INSILICO", type = "contains" },
+]
+
+[[company]]
+id = "aramis"
+name = "Aramis Biotechnologies"
+beats = [
+    "health",
+]
+match = [
+    "Aramis Biotechnologies",
+]
+
+[[company]]
+id = "aspartes"
+name = "Aspartes"
+beats = [
+    "health",
+]
+
+[[company]]
+id = "vena-medical"
+name = "Vena Medical"
+beats = [
+    "health",
+]
+match = [
+    "Vena Medical",
+]
+
+[company.news_release]
+terms = [
+    "Vena Medical",
+    "venamed",
+]
+url = "https://www.venamed.ca/news-updates"
+
+[[company]]
+id = "well-health"
+name = "Well Health"
+beats = [
+    "health",
+]
+match = [
+    "WELL Health Technologies",
+    "Well Health",
+]
+
+[company.news_release]
+terms = [
+    "Well Health Technologies",
+    "WELL Health",
+]
+
+[company.google_news]
+search = [
+    "WELL Health Technologies",
+]
+
+[company.courts]
+searches = [
+    { term = "WELL HEALTH TECHNOLOGIES CORP", type = "exact" },
+]
+
+[[company]]
+id = "cloudmd"
+name = "CloudMD"
+beats = [
+    "health",
+]
+
+[[company]]
+id = "maple"
+name = "Maple"
+beats = [
+    "health",
+]
+match = [
+    "Maple Corporation",
+    "getmaple",
+]
+
+[company.news_release]
+terms = [
+    "Maple Health",
+    "Maple Corp",
+    "getmaple",
+]
+url = "https://www.getmaple.ca/newsroom/"
+
+[company.google_news]
+search = [
+    "Maple telemedicine",
+    "Maple virtual care",
+]
+
+[company.courts]
+display = "Maple (telemedicine)"
+searches = [
+    { term = "Maple Corporation", type = "exact" },
+]
+
+[[company]]
+id = "teladoc"
+name = "Teladoc"
+beats = [
+    "health",
+]
+canada_gate = true
+match = [
+    "Teladoc",
+]
+
+[company.news_release]
+display = "Teladoc Canada"
+terms = [
+    "Teladoc Canada",
+]
+
+[[company]]
+id = "shoppers-drug-mart"
+name = "Shoppers Drug Mart"
+beats = [
+    "health",
+]
+match = [
+    "Shoppers Drug Mart",
+]
+
+[company.news_release]
+terms = [
+    "Shoppers Drug Mart",
+    "Shoppers",
+]
+
+[[company]]
+id = "bell"
+name = "Bell"
+beats = [
+    "telecom",
+]
+match = [
+    "Bell Canada",
+    "BCE Inc",
+    "Bell Mobility",
+    "Bell Media",
+    "Bell Expressvu",
+    "Bell Technical Solutions",
+]
+
+[company.news_release]
+display = "Bell Canada"
+terms = [
+    "Bell Canada",
+    "BCE Inc",
+]
+
+[company.google_news]
+search = [
+    "Bell Canada",
+    "BCE Inc",
+]
+
+[company.courts]
+display = "Bell Canada"
+searches = [
+    { term = "BELL CANADA", type = "exact" },
+    { term = "BELL MOBILITY INC.", type = "exact" },
+    { term = "BELL MEDIA INC.", type = "exact" },
+    { term = "THE BELL TELEPHONE COMPANY OF CANADA", type = "exact" },
+    { term = "BELL EXPRESSVU INC.", type = "exact" },
+    { term = "BELL TECHNICAL SOLUTIONS INC.", type = "exact" },
+    { term = "BCE INC.", type = "exact" },
+    { term = "BCE INC", type = "exact" },
+    { term = "BCE INCORPORATED", type = "exact" },
+]
+
+[[company]]
+id = "rogers"
+name = "Rogers"
+beats = [
+    "telecom",
+]
+match = [
+    "Rogers Communications",
+    "Fido Solutions",
+]
+
+[company.news_release]
+terms = [
+    "Rogers Communications",
+]
+
+[company.google_news]
+search = [
+    "Rogers Communications",
+]
+
+[company.courts]
+display = "Rogers Communications"
+searches = [
+    { term = "ROGERS COMMUNICATIONS CANADA INC.", type = "exact" },
+    { term = "ROGERS COMMUNICATIONS CANADA INC", type = "exact" },
+    { term = "ROGERS COMMUNICATIONS CANADA LTD", type = "exact" },
+    { term = "ROGERS COMMUNICATIONS CANADA LTD.", type = "exact" },
+    { term = "ROGERS COMMUNICATIONS INC.", type = "exact" },
+    { term = "ROGERS COMMUNICATIONS INC", type = "exact" },
+    { term = "ROGERS COMMUNICATIONS PARTNERSHIP", type = "exact" },
+    { term = "ROGERS MEDIA INC.", type = "exact" },
+    { term = "FIDO SOLUTIONS INC.", type = "exact" },
+]
+
+[[company]]
+id = "telus"
+name = "Telus"
+beats = [
+    "telecom",
+]
+match = [
+    "Telus",
+]
+
+[company.news_release]
+terms = [
+    "TELUS",
+]
+
+[company.google_news]
+search = [
+    "Telus Corporation",
+    "Telus Health",
+]
+
+[company.courts]
+searches = [
+    { term = "TELUS COMMUNICATIONS INC.", type = "exact" },
+    { term = "TELUS COMMUNICATIONS INC", type = "exact" },
+    { term = "TELUS CORPORATION", type = "exact" },
+    { term = "TELUS HEALTH (CANADA) LTD.", type = "exact" },
+    { term = "TELUS RETAIL LTD.", type = "exact" },
+]
+
+[[company]]
+id = "videotron"
+name = "Videotron"
+beats = [
+    "telecom",
+]
+match = [
+    "Videotron",
+    "Vidéotron",
+]
+
+[company.news_release]
+terms = [
+    "Videotron",
+    "Vidéotron",
+]
+
+[company.google_news]
+search = [
+    "Videotron",
+    "Quebecor",
+]
+
+[company.courts]
+searches = [
+    { term = "Videotron", type = "contains" },
+]
+
+[[company]]
+id = "iristel"
+name = "Iristel"
+beats = [
+    "telecom",
+]
+
+[company.news_release]
+terms = [
+    "Iristel",
+    "Ice Wireless",
+]
+
+[company.courts]
+searches = [
+    { term = "Iristel", type = "contains" },
+]
+
+[[company]]
+id = "cogeco"
+name = "Cogeco"
+beats = [
+    "telecom",
+]
+
+[company.courts]
+searches = [
+    { term = "Cogeco", type = "contains" },
+]
+
+[[company]]
+id = "ericsson"
+name = "Ericsson"
+beats = [
+    "telecom",
+]
+canada_gate = true
+match = [
+    "Ericsson",
+]
+
+[company.news_release]
+display = "Ericsson Canada"
+terms = [
+    "Ericsson Canada",
+]
+
+[company.google_news]
+search = [
+    "Ericsson Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "ERICSSON", type = "contains" },
+]
+
+[[company]]
+id = "nokia"
+name = "Nokia"
+beats = [
+    "telecom",
+]
+canada_gate = true
+match = [
+    "Nokia",
+]
+
+[company.news_release]
+display = "Nokia Canada"
+terms = [
+    "Nokia Canada",
+]
+
+[company.google_news]
+search = [
+    "Nokia Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "NOKIA", type = "contains" },
+]
+
+[[company]]
+id = "huawei"
+name = "Huawei"
+beats = [
+    "telecom",
+]
+canada_gate = true
+match = [
+    "Huawei",
+]
+
+[company.news_release]
+display = "Huawei Canada"
+terms = [
+    "Huawei Canada",
+]
+
+[company.google_news]
+search = [
+    "Huawei Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "HUAWEI", type = "contains" },
+]
+
+[[company]]
+id = "mda-space"
+name = "MDA Space"
+beats = [
+    "space",
+]
+match = [
+    "MDA Space",
+    "MDA Ltd",
+]
+
+[company.google_news]
+search = [
+    "MDA Space",
+]
+
+[company.courts]
+searches = [
+    { term = "MDA", type = "contains" },
+]
+
+[[company]]
+id = "canadensys"
+name = "Canadensys"
+beats = [
+    "space",
+]
+
+[company.news_release]
+terms = [
+    "Canadensys Aerospace",
+]
+url = "https://www.canadensys.com/news-releases/"
+
+[[company]]
+id = "kepler"
+name = "Kepler Communications"
+beats = [
+    "space",
+]
+match = [
+    "Kepler Communications",
+]
+
+[[company]]
+id = "mission-control"
+name = "Mission Control"
+beats = [
+    "space",
+]
+match = [
+    "Mission Control Space Services",
+]
+
+[company.news_release]
+terms = [
+    "Mission Control Space Services",
+]
+
+[[company]]
+id = "maritime-launch"
+name = "Maritime Launch"
+beats = [
+    "space",
+]
+match = [
+    "Maritime Launch Services",
+]
+
+[company.news_release]
+display = "Maritime Launch"
+terms = [
+    "Maritime Launch Services",
+]
+
+[company.courts]
+searches = [
+    { term = "MARITIME LAUNCH SERVICES INC.", type = "exact" },
+]
+
+[[company]]
+id = "nordspace"
+name = "NordSpace"
+beats = [
+    "space",
+]
+
+[company.news_release]
+url = "https://www.nordspace.com/news"
+
+[[company]]
+id = "canada-rocket"
+name = "Canada Rocket"
+beats = [
+    "space",
+]
+match = [
+    "Canada Rocket",
+]
+
+[company.news_release]
+display = "Canada Rocket Co"
+
+[[company]]
+id = "telesat"
+name = "Telesat"
+beats = [
+    "space",
+]
+
+[company.google_news]
+search = [
+    "Telesat",
+    "Telesat Lightspeed",
+]
+
+[[company]]
+id = "ghgsat"
+name = "GHGSat"
+beats = [
+    "space",
+]
+
+[[company]]
+id = "earthdaily"
+name = "EarthDaily"
+beats = [
+    "space",
+]
+match = [
+    "EarthDaily Analytics",
+    "EarthDaily",
+]
+
+[company.news_release]
+display = "EarthDaily"
+terms = [
+    "EarthDaily Analytics",
+    "EarthDaily",
+]
+url = "https://www.newswire.ca/news/earthdaily-analytics/"
+
+[company.google_news]
+display = "EarthDaily Analytics"
+search = [
+    "EarthDaily",
+]
+
+[[company]]
+id = "nord-quantique"
+name = "Nord Quantique"
+beats = [
+    "quantum",
+]
+
+[company.news_release]
+url = "https://nordquantique.ca/en/news/"
+
+[[company]]
+id = "photonic"
+name = "Photonic Inc"
+beats = [
+    "quantum",
+]
+match = [
+    "Photonic Inc",
+]
+
+[company.news_release]
+terms = [
+    "Photonic Inc",
+    "Photonic",
+]
+url = "https://photonic.com/news/"
+
+[company.google_news]
+search = [
+    "Photonic Inc quantum",
+]
+
+[company.courts]
+searches = [
+    { term = "PHOTONIC", type = "contains" },
+]
+
+[[company]]
+id = "xanadu"
+name = "Xanadu"
+beats = [
+    "quantum",
+]
+match = [
+    "Xanadu Quantum",
+]
+
+[company.news_release]
+terms = [
+    "Xanadu Quantum",
+    "Xanadu Technologies",
+]
+
+[company.google_news]
+display = "Xanadu Quantum"
+search = [
+    "Xanadu quantum",
+]
+
+[company.courts]
+display = "Xanadu Quantum"
+searches = [
+    { term = "XANADU", type = "contains" },
+]
+
+[[company]]
+id = "via-rail"
+name = "Via Rail / Alto"
+beats = [
+    "transport",
+]
+match = [
+    "VIA Rail",
+    "Via HFR",
+]
+
+[company.news_release]
+terms = [
+    "VIA Rail",
+    "Via HFR",
+    "TGV Québec",
+    "Alto",
+]
+
+[company.google_news]
+display = "Via Rail / Alto"
+search = [
+    "Via Rail",
+    "VIA HFR",
+    "Alto high-speed rail",
+]
+
+[company.courts]
+display = "Via Rail / VIA HFR"
+searches = [
+    { term = "VIA RAIL", type = "contains" },
+    { term = "VIA HFR", type = "contains" },
+    { term = "ALTO", type = "contains" },
+]
+
+[[company]]
+id = "cn-rail"
+name = "CN Rail"
+beats = [
+    "transport",
+]
+match = [
+    "Canadian National Railway",
+    "CN Rail",
+]
+
+[company.news_release]
+terms = [
+    "Canadian National Railway",
+    "CN Rail",
+    " CNR ",
+]
+
+[company.google_news]
+search = [
+    "CN Rail",
+    "Canadian National Railway",
+]
+
+[company.courts]
+searches = [
+    { term = "CANADIAN NATIONAL RAILWAY", type = "exact" },
+]
+
+[[company]]
+id = "cpkc"
+name = "CPKC"
+beats = [
+    "transport",
+]
+match = [
+    "CPKC",
+    "Canadian Pacific Kansas City",
+    "Canadian Pacific Railway",
+]
+
+[company.news_release]
+terms = [
+    "CPKC",
+    "Canadian Pacific Kansas City",
+]
+
+[company.google_news]
+search = [
+    "CPKC",
+    "Canadian Pacific Kansas City",
+]
+
+[company.courts]
+searches = [
+    { term = "CANADIAN PACIFIC KANSAS CITY LIMITED", type = "exact" },
+    { term = "CANADIAN PACIFIC RAILWAY LIMITED", type = "exact" },
+    { term = "CANADIAN PACIFIC RAILWAY COMPANY", type = "exact" },
+]
+
+[[company]]
+id = "air-canada"
+name = "Air Canada"
+beats = [
+    "transport",
+]
+match = [
+    "Air Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "AIR CANADA", type = "exact" },
+]
+
+[[company]]
+id = "westjet"
+name = "WestJet"
+beats = [
+    "transport",
+]
+match = [
+    "WestJet",
+]
+
+[company.courts]
+searches = [
+    { term = "WESTJET AIRLINES LTD.", type = "exact" },
+    { term = "WESTJET AIRLINES LTD", type = "exact" },
+    { term = "WESTJET", type = "exact" },
+]
+
+[[company]]
+id = "hydro-one"
+name = "Hydro One"
+beats = [
+    "energy",
+]
+private = false
+match = [
+    "Hydro One",
+]
+
+[company.courts]
+searches = [
+    { term = "HYDRO ONE", type = "exact" },
+]
+
+[[company]]
+id = "hydro-quebec"
+name = "Hydro-Québec"
+beats = [
+    "energy",
+]
+private = false
+match = [
+    "Hydro-Québec",
+    "Hydro-Quebec",
+]
+
+[company.news_release]
+terms = [
+    "Hydro-Québec",
+    "Hydro-Quebec",
+]
+
+[company.google_news]
+search = [
+    "Hydro-Quebec",
+]
+
+[company.courts]
+searches = [
+    { term = "HYDRO-QUEBEC", type = "contains" },
+    { term = "HYDRO QUEBEC", type = "contains" },
+]
+
+[[company]]
+id = "bc-hydro"
+name = "BC Hydro"
+beats = [
+    "energy",
+]
+private = false
+match = [
+    "BC Hydro",
+    "British Columbia Hydro",
+]
+
+[company.news_release]
+terms = [
+    "BC Hydro",
+    "British Columbia Hydro",
+]
+
+[company.google_news]
+search = [
+    "BC Hydro",
+]
+
+[company.courts]
+searches = [
+    { term = "BRITISH COLUMBIA HYDRO AND POWER AUTHORITY", type = "exact" },
+]
+
+[[company]]
+id = "nukik"
+name = "Nukik"
+beats = [
+    "energy",
+]
+
+[[company]]
+id = "grengine"
+name = "Grengine"
+beats = [
+    "energy",
+]
+
+[company.news_release]
+url = "https://grengine.com/news/"
+
+[[company]]
+id = "stellarex"
+name = "Stellarex"
+beats = [
+    "energy",
+]
+
+[company.news_release]
+url = "https://stellarex.energy/"
+
+[[company]]
+id = "invest-ottawa"
+name = "Invest Ottawa"
+beats = [
+    "research",
+]
+private = false
+tools = [
+    "contracts",
+    "news_release",
+]
+
+[company.news_release]
+sector = "Ottawa / Research"
+terms = [
+    "Invest Ottawa",
+    "Area X.O",
+]
+feed = "https://www.investottawa.ca/feed/"
+
+[[company]]
+id = "canadian-space-agency"
+name = "Canadian Space Agency"
+beats = [
+    "space",
+]
+private = false
+tools = [
+    "courts",
+]
+
+[company.courts]
+searches = [
+    { term = "CANADIAN SPACE AGENCY", type = "exact" },
+]
+
+[[company]]
+id = "university-of-ottawa"
+name = "University of Ottawa"
+beats = [
+    "research",
+]
+private = false
+tools = [
+    "courts",
+]
+
+[company.courts]
+searches = [
+    { term = "UNIVERSITY OF OTTAWA", type = "exact" },
+]
+
+[[company]]
+id = "carleton-university"
+name = "Carleton University"
+beats = [
+    "research",
+]
+private = false
+tools = [
+    "courts",
+]
+
+[company.courts]
+searches = [
+    { term = "CARLETON UNIVERSITY", type = "exact" },
+]
+
+[[company]]
+id = "algonquin-college"
+name = "Algonquin College"
+beats = [
+    "research",
+]
+private = false
+tools = [
+    "courts",
+]
+
+[company.courts]
+searches = [
+    { term = "ALGONQUIN COLLEGE OF APPLIED ARTS AND TECHNOLOGY", type = "exact" },
+]
+
+[[company]]
+id = "port-vancouver-fraser"
+name = "Port of Vancouver Fraser"
+beats = [
+    "transport",
+]
+private = false
+tools = [
+    "news_release",
+]
+
+[company.news_release]
+terms = [
+    "Vancouver Fraser Port",
+    "Port Metro Vancouver",
+]
+
+[[company]]
+id = "port-prince-rupert"
+name = "Port of Prince Rupert"
+beats = [
+    "transport",
+]
+private = false
+tools = [
+    "news_release",
+]
+
+[company.news_release]
+terms = [
+    "Prince Rupert Port Authority",
+]
+
+[[company]]
+id = "port-montreal"
+name = "Port of Montreal"
+beats = [
+    "transport",
+]
+private = false
+tools = [
+    "news_release",
+]
+
+[company.news_release]
+terms = [
+    "Montreal Port Authority",
+    "Administration portuaire de Montréal",
+]
+
+[[company]]
+id = "port-halifax"
+name = "Port of Halifax"
+beats = [
+    "transport",
+]
+private = false
+tools = [
+    "news_release",
+]
+
+[company.news_release]
+terms = [
+    "Halifax Port Authority",
+    "Port of Halifax",
+]
