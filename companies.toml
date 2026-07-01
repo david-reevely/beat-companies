@@ -2094,3 +2094,19 @@ terms = [
     "Halifax Port Authority",
     "Port of Halifax",
 ]
+
+[[company]]
+id = "greypoint-industries"
+name = "Greypoint Industries"
+beats = [
+    "defence",
+]
+match = [
+    "Greypoint Industries",
+    "Greypoint",
+]
+
+[company.courts]
+searches = [
+    { term = "GREYPOINT", type = "contains" },
+]
