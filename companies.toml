@@ -2105,7 +2105,35 @@ match = [
     "Greypoint Industries",
     "Greypoint",
 ]
+[[company]]
+id = "zero-point-cryogenics"
+name = "Zero Point Cryogenics"
+beats = [
+    "quantum",
+]
+match = [
+    "Zero Point Cryogenics",
+]
 
+[company.courts]
+searches = [
+    { term = "ZERO POINT CRYOGENICS INC.", type = "exact" },
+    { term = "ZERO POINT CRYOGENICS INC", type = "exact" },
+]
+[[company]]
+id = "samdesk"
+name = "Samdesk"
+beats = [
+    "defence",
+]
+match = [
+    "Samdesk",
+]
+
+[company.courts]
+searches = [
+    { term = "SAMDESK", type = "contains" },
+]
 [company.courts]
 searches = [
     { term = "GREYPOINT", type = "contains" },
