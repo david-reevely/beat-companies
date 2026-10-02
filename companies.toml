@@ -50,6 +50,11 @@ beats = [
     "cybersecurity",
 ]
 
+[company.courts]
+searches = [
+    { term = "KYNDRYL", type = "contains" },
+]
+
 [[company]]
 id = "plurilock"
 name = "Plurilock"
@@ -59,6 +64,11 @@ beats = [
 
 [company.news_release]
 feed = "https://www.plurilock.com/feed/"
+
+[company.courts]
+searches = [
+    { term = "PLURILOCK", type = "contains" },
+]
 
 [[company]]
 id = "field-effect"
@@ -74,7 +84,7 @@ search = [
 
 [company.courts]
 searches = [
-    { term = "FIELD EFFECT", type = "exact" },
+    { term = "FIELD EFFECT SOFTWARE", type = "contains" },
 ]
 
 [[company]]
@@ -93,6 +103,12 @@ terms = [
     "IBM Watson",
 ]
 
+[company.courts]
+searches = [
+    { term = "IBM CANADA LTD.", type = "exact" },
+    { term = "IBM CANADA LIMITED", type = "exact" },
+]
+
 [[company]]
 id = "microsoft-canada"
 name = "Microsoft Canada"
@@ -101,6 +117,12 @@ beats = [
 ]
 match = [
     "Microsoft Canada",
+]
+
+[company.courts]
+searches = [
+    { term = "MICROSOFT CANADA INC.", type = "exact" },
+    { term = "MICROSOFT CANADA CO.", type = "exact" },
 ]
 
 [[company]]
@@ -137,11 +159,21 @@ terms = [
     "General Dynamics Mission Systems Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "GENERAL DYNAMICS", type = "contains" },
+]
+
 [[company]]
 id = "bombardier"
 name = "Bombardier"
 beats = [
     "defence",
+]
+
+[company.courts]
+searches = [
+    { term = "Bombardier", type = "contains" },
 ]
 
 [[company]]
@@ -162,6 +194,11 @@ terms = [
     "Volatus",
 ]
 
+[company.courts]
+searches = [
+    { term = "VOLATUS", type = "contains" },
+]
+
 [[company]]
 id = "kraken-robotics"
 name = "Kraken Robotics"
@@ -174,6 +211,11 @@ match = [
 
 [company.news_release]
 feed = "https://krakenrobotics.com/feed/"
+
+[company.courts]
+searches = [
+    { term = "KRAKEN", type = "contains" },
+]
 
 [[company]]
 id = "seaspan"
@@ -192,6 +234,11 @@ search = [
     "Seaspan Shipyards",
 ]
 
+[company.courts]
+searches = [
+    { term = "SEASPAN", type = "contains" },
+]
+
 [[company]]
 id = "irving-shipbuilding"
 name = "Irving Shipbuilding"
@@ -200,6 +247,11 @@ beats = [
 ]
 match = [
     "Irving Shipbuilding",
+]
+
+[company.courts]
+searches = [
+    { term = "IRVING SHIPBUILDING", type = "contains" },
 ]
 
 [[company]]
@@ -240,6 +292,11 @@ match = [
     "Dominion Dynamics",
 ]
 
+[company.courts]
+searches = [
+    { term = "DOMINION DYNAMICS INC.", type = "exact" },
+]
+
 [[company]]
 id = "juno"
 name = "Juno"
@@ -257,6 +314,11 @@ terms = [
     "Juno Inc",
 ]
 
+[company.courts]
+searches = [
+    { term = "JUNO DEFENCE", type = "contains" },
+]
+
 [[company]]
 id = "one9"
 name = "One9"
@@ -272,6 +334,11 @@ match = [
 terms = [
     "One9",
     "One Nine",
+]
+
+[company.courts]
+searches = [
+    { term = "One9", type = "contains" },
 ]
 
 [[company]]
@@ -293,7 +360,7 @@ terms = [
 
 [company.courts]
 searches = [
-    { term = "LOCKHEED MARTIN", type = "exact" },
+    { term = "LOCKHEED MARTIN", type = "contains" },
 ]
 
 [[company]]
@@ -346,6 +413,11 @@ terms = [
 ]
 url = "https://team212cd.ca/"
 
+[company.courts]
+searches = [
+    { term = "TKMS", type = "contains" },
+]
+
 [[company]]
 id = "hanwha-ocean"
 name = "Hanwha Ocean"
@@ -365,6 +437,11 @@ terms = [
 ]
 url = "https://www.newswire.ca/news/hanwha-ocean/"
 
+[company.courts]
+searches = [
+    { term = "HANWHA", type = "contains" },
+]
+
 [[company]]
 id = "calian"
 name = "Calian"
@@ -380,6 +457,12 @@ display = "Calian Group"
 terms = [
     "Calian Group",
     "Calian",
+]
+url = "https://www.newswire.ca/news/calian-group-ltd/"
+
+[company.courts]
+searches = [
+    { term = "CALIAN", type = "contains" },
 ]
 
 [[company]]
@@ -450,6 +533,11 @@ match = [
 [company.news_release]
 url = "https://magellan.aero/media/press-releases/"
 
+[company.courts]
+searches = [
+    { term = "MAGELLAN AEROSPACE", type = "contains" },
+]
+
 [[company]]
 id = "5n-plus"
 name = "5N Plus"
@@ -467,11 +555,21 @@ terms = [
 ]
 url = "https://www.newswire.ca/news/5n-plus-inc/"
 
+[company.courts]
+searches = [
+    { term = "5N PLUS", type = "contains" },
+]
+
 [[company]]
 id = "top-aces"
 name = "Top Aces"
 beats = [
     "defence",
+]
+
+[company.courts]
+searches = [
+    { term = "TOP ACES", type = "contains" },
 ]
 
 [[company]]
@@ -484,11 +582,17 @@ match = [
     "Landing Zones Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "LANDING ZONES CANADA INC.", type = "exact" },
+]
+
 [[company]]
 id = "canadian-strategic-missions"
 name = "Canadian Strategic Missions"
 beats = [
     "defence",
+    "energy",
 ]
 match = [
     "Canadian Strategic Missions",
@@ -499,6 +603,11 @@ terms = [
     "Canadian Strategic Missions Corporation",
     "CSMC",
     "Canadian Space Mining Corporation",
+]
+
+[company.courts]
+searches = [
+    { term = "CANADIAN STRATEGIC MISSIONS CORPORATION", type = "exact" },
 ]
 
 [[company]]
@@ -517,6 +626,11 @@ terms = [
     "Marshall Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "MARSHALL LAND SYSTEMS LIMITED", type = "exact" },
+]
+
 [[company]]
 id = "shearwater-aerospace"
 name = "Shearwater Aerospace"
@@ -531,6 +645,11 @@ match = [
 terms = [
     "Shearwater Aerospace",
     "Shearwater Aerospatiale",
+]
+
+[company.courts]
+searches = [
+    { term = "SHEARWATER", type = "contains" },
 ]
 
 [[company]]
@@ -583,6 +702,11 @@ terms = [
 [company.google_news]
 search = [
     "Westinghouse nuclear",
+]
+
+[company.courts]
+searches = [
+    { term = "WESTINGHOUSE", type = "contains" },
 ]
 
 [[company]]
@@ -659,6 +783,11 @@ terms = [
     "BWXT Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "BWXT", type = "contains" },
+]
+
 [[company]]
 id = "general-fusion"
 name = "General Fusion"
@@ -668,6 +797,11 @@ beats = [
 
 [company.news_release]
 feed = "https://generalfusion.com/feed/"
+
+[company.courts]
+searches = [
+    { term = "GENERAL FUSION", type = "contains" },
+]
 
 [[company]]
 id = "opg"
@@ -721,6 +855,11 @@ search = [
     "Moltex Energy",
 ]
 
+[company.courts]
+searches = [
+    { term = "MOLTEX", type = "contains" },
+]
+
 [[company]]
 id = "terrestrial-energy"
 name = "Terrestrial Energy"
@@ -764,6 +903,11 @@ search = [
     "Moderna Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "MODERNA", type = "contains" },
+]
+
 [[company]]
 id = "pfizer"
 name = "Pfizer"
@@ -786,11 +930,21 @@ search = [
     "Pfizer Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "PFIZER", type = "contains" },
+]
+
 [[company]]
 id = "abcellera"
 name = "AbCellera"
 beats = [
     "health",
+]
+
+[company.courts]
+searches = [
+    { term = "ABCELLERA", type = "contains" },
 ]
 
 [[company]]
@@ -862,6 +1016,11 @@ beats = [
     "health",
 ]
 
+[company.courts]
+searches = [
+    { term = "ZYMEWORKS", type = "contains" },
+]
+
 [[company]]
 id = "insilico"
 name = "Insilico Medicine"
@@ -922,6 +1081,11 @@ terms = [
     "venamed",
 ]
 url = "https://www.venamed.ca/news-updates"
+
+[company.courts]
+searches = [
+    { term = "VENA MEDICAL", type = "contains" },
+]
 
 [[company]]
 id = "well-health"
@@ -1005,6 +1169,11 @@ terms = [
     "Teladoc Canada",
 ]
 
+[company.courts]
+searches = [
+    { term = "TELADOC", type = "contains" },
+]
+
 [[company]]
 id = "shoppers-drug-mart"
 name = "Shoppers Drug Mart"
@@ -1019,6 +1188,11 @@ match = [
 terms = [
     "Shoppers Drug Mart",
     "Shoppers",
+]
+
+[company.courts]
+searches = [
+    { term = "SHOPPERS DRUG MART INC.", type = "exact" },
 ]
 
 [[company]]
@@ -1301,6 +1475,11 @@ terms = [
 ]
 url = "https://www.canadensys.com/news-releases/"
 
+[company.courts]
+searches = [
+    { term = "CANADENSYS", type = "contains" },
+]
+
 [[company]]
 id = "kepler"
 name = "Kepler Communications"
@@ -1309,6 +1488,11 @@ beats = [
 ]
 match = [
     "Kepler Communications",
+]
+
+[company.courts]
+searches = [
+    { term = "KEPLER", type = "contains" },
 ]
 
 [[company]]
@@ -1324,6 +1508,11 @@ match = [
 [company.news_release]
 terms = [
     "Mission Control Space Services",
+]
+
+[company.courts]
+searches = [
+    { term = "MISSION CONTROL SPACE SERVICES INC.", type = "exact" },
 ]
 
 [[company]]
@@ -1357,6 +1546,11 @@ beats = [
 [company.news_release]
 url = "https://www.nordspace.com/news"
 
+[company.courts]
+searches = [
+    { term = "NORDSPACE", type = "contains" },
+]
+
 [[company]]
 id = "canada-rocket"
 name = "Canada Rocket"
@@ -1365,10 +1559,17 @@ beats = [
 ]
 match = [
     "Canada Rocket",
+    "Canada Rocket Company",
 ]
 
 [company.news_release]
 display = "Canada Rocket Co"
+
+[company.courts]
+searches = [
+    { term = "CANADA ROCKET COMPANY", type = "exact" },
+    { term = "CANADA ROCKET CO.", type = "exact" },
+]
 
 [[company]]
 id = "telesat"
@@ -1383,11 +1584,21 @@ search = [
     "Telesat Lightspeed",
 ]
 
+[company.courts]
+searches = [
+    { term = "Telesat", type = "contains" },
+]
+
 [[company]]
 id = "ghgsat"
 name = "GHGSat"
 beats = [
     "space",
+]
+
+[company.courts]
+searches = [
+    { term = "GHGSAT", type = "contains" },
 ]
 
 [[company]]
@@ -1415,6 +1626,11 @@ search = [
     "EarthDaily",
 ]
 
+[company.courts]
+searches = [
+    { term = "EARTHDAILY", type = "contains" },
+]
+
 [[company]]
 id = "nord-quantique"
 name = "Nord Quantique"
@@ -1424,6 +1640,11 @@ beats = [
 
 [company.news_release]
 url = "https://nordquantique.ca/en/news/"
+
+[company.courts]
+searches = [
+    { term = "NORD QUANTIQUE", type = "contains" },
+]
 
 [[company]]
 id = "photonic"
@@ -1903,4 +2124,98 @@ match = [
 [company.courts]
 searches = [
     { term = "SAMDESK", type = "contains" },
+]
+
+[[company]]
+id = "wuxly"
+name = "Wuxly"
+beats = [
+    "defence",
+]
+match = [
+    "Wuxly",
+]
+
+[company.courts]
+searches = [
+    { term = "WUXLY", type = "contains" },
+]
+
+[[company]]
+id = "sterling-energetics"
+name = "Sterling Energetics"
+beats = [
+    "defence",
+]
+match = [
+    "Sterling Energetics",
+]
+
+[company.courts]
+searches = [
+    { term = "STERLING ENERGETICS INC.", type = "exact" },
+    { term = "STERLING ENERGETICS INC", type = "exact" },
+]
+
+[[company]]
+id = "galaxia-mission-systems"
+name = "Galaxia Mission Systems"
+beats = [
+    "space",
+]
+match = [
+    "Galaxia Mission Systems",
+    "Galaxia",
+]
+
+[company.courts]
+searches = [
+    { term = "GALAXIA", type = "contains" },
+]
+
+[[company]]
+id = "sentinel-rd"
+name = "Sentinel R&D"
+beats = [
+    "defence",
+]
+match = [
+    "Sentinel R&D",
+]
+
+[company.courts]
+searches = [
+    { term = "Sentinel R&D", type = "contains" },
+]
+
+[[company]]
+id = "convergence-design"
+name = "Convergence Design"
+beats = [
+    "defence",
+]
+match = [
+    "Convergence Design Services",
+    "Convergence Design",
+]
+
+[company.courts]
+searches = [
+    { term = "CONVERGENCE DESIGN SERVICES", type = "exact" },
+    { term = "CONVERGENCE DESIGN", type = "contains" },
+]
+
+[[company]]
+id = "reaction-dynamics"
+name = "Reaction Dynamics"
+beats = [
+    "space",
+]
+match = [
+    "Reaction Dynamics",
+]
+
+[company.courts]
+searches = [
+    { term = "Reaction Dynamics", type = "contains" },
 ]
