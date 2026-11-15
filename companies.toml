@@ -210,7 +210,8 @@ match = [
 ]
 
 [company.news_release]
-feed = "https://krakenrobotics.com/feed/"
+# Site feed gone (404) by Nov 2026; Kraken issues everything via GlobeNewswire
+feed = "https://www.globenewswire.com/rssfeed/organization/wLMB1hazNvjK0EgmwQNZfg=="
 
 [company.courts]
 searches = [
@@ -458,7 +459,8 @@ terms = [
     "Calian Group",
     "Calian",
 ]
-url = "https://www.newswire.ca/news/calian-group-ltd/"
+# Moved from CNW to GlobeNewswire; old newswire.ca page 404s (Nov 2026)
+feed = "https://www.globenewswire.com/rssfeed/organization/Go6B3f0lO3z1KR3DuHirSw=="
 
 [company.courts]
 searches = [
@@ -1661,7 +1663,8 @@ terms = [
     "Photonic Inc",
     "Photonic",
 ]
-url = "https://photonic.com/news/"
+# /news/ listing gone (404); releases now listed under News & Events. Site RSS is blog-only.
+url = "https://photonic.com/events/"
 
 [company.google_news]
 search = [
