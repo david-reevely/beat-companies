@@ -2237,3 +2237,18 @@ match = [
 searches = [
     { term = "ROSHEL", type = "contains" },
 ]
+
+[[company]]
+id = "arcanus"
+name = "Arcanus Aerial Systems"
+beats = [
+    "defence",
+]
+match = [
+    "Arcanus",
+]
+
+[company.courts]
+searches = [
+    { term = "ARCANUS", type = "contains" },
+]
