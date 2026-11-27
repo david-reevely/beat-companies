@@ -210,7 +210,6 @@ match = [
 ]
 
 [company.news_release]
-# Site feed gone (404) by Nov 2026; Kraken issues everything via GlobeNewswire
 feed = "https://www.globenewswire.com/rssfeed/organization/wLMB1hazNvjK0EgmwQNZfg=="
 
 [company.courts]
@@ -459,7 +458,6 @@ terms = [
     "Calian Group",
     "Calian",
 ]
-# Moved from CNW to GlobeNewswire; old newswire.ca page 404s (Nov 2026)
 feed = "https://www.globenewswire.com/rssfeed/organization/Go6B3f0lO3z1KR3DuHirSw=="
 
 [company.courts]
@@ -1663,7 +1661,6 @@ terms = [
     "Photonic Inc",
     "Photonic",
 ]
-# /news/ listing gone (404); releases now listed under News & Events. Site RSS is blog-only.
 url = "https://photonic.com/events/"
 
 [company.google_news]
@@ -2221,4 +2218,19 @@ match = [
 [company.courts]
 searches = [
     { term = "Reaction Dynamics", type = "contains" },
+]
+
+[[company]]
+id = "roshel"
+name = "Roshel"
+beats = [
+    "defence",
+]
+match = [
+    "Roshel",
+]
+
+[company.courts]
+searches = [
+    { term = "ROSHEL", type = "contains" },
 ]
